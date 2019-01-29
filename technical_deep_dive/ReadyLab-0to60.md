@@ -1,4 +1,4 @@
-#Cosmos DB Ready Lab - Going from 0 to 60 with Modern App Development Using Azure Cosmos DB
+# Cosmos DB Ready Lab - Going from 0 to 60 with Modern App Development Using Azure Cosmos DB
 
 ## Create Azure Cosmos DB Account
 
