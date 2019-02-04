@@ -155,51 +155,51 @@ You will use **Azure Data Factory (ADF)** to import the JSON array stored in the
 
 4. Search for **Data Factory** and select it
 
-    ![adf-search](../media/03-adf_search.png)
+    ![adf-search](../media/03-adf_search.jpg)
 
 5. Create a new **Data Factory**. You should name this data factory **importstudentdata** and select the relevant Azure subscription. You should ensure your existing **cosmosdblab-group** resource group is selected as well as a Version **V2**. Select **East US** as the region. Click **create**.
 
-    ![df](../media/03-adf_selections.png)
+    ![df](../media/03-adf_selections.jpg)
 
 6. After creation, open your newly created Data Factory. Select **Author & Monitor** and you will launch ADF. You should see a screen similar to the screenshot below. Select **Copy Data**. We will be using ADF for a one-time copy of data from a source JSON file on Azure Blob Storage to a database in Cosmos DB’s SQL API. ADF can also be used for more frequent data transfers from Cosmos DB to other data stores.
-    ![](../media/03-adf_author&monitor.png)
-    ![](../media/03-adf_copydata.png)
+    ![](../media/03-adf_author&monitor.jpg)
+    ![](../media/03-adf_copydata.jpg)
 
 7. Edit basic properties for this data copy. You should name the task **ImportStudents** and select to **Run once now**
 
-   ![adf-properties](../media/03-adf_properties.png)
+   ![adf-properties](../media/03-adf_properties.jpg)
 
 8. **Create a new connection** and select **Azure Blob Storage**. We will import data from a json file on Azure Blob Storage. In addition to Blob Storage, you can use ADF to migrate from a wide variety of sources. We will not cover migration from these sources in this tutorial.
 
-    ![](../media/03-adf_blob.png)
+    ![](../media/03-adf_blob.jpg)
 
 9. Name the source **StudentsJson** and select **Use SAS URI** as the Authentication method. Please use the following SAS URI for read-only access to this Blob Storage container: https://cosmosdblabs.blob.core.windows.net/?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2020-03-11T08:08:39Z&st=2018-11-10T02:08:39Z&spr=https&sig=ZSwZhcBdwLVIMRj94pxxGojWwyHkLTAgnL43BkbWKyg%3D
 
-    ![](../media/03-adf_connecttoblob.png)
+    ![](../media/03-adf_connecttoblob.jpg)
 
 10. Select the **students** folder
 
-    ![](../media/03-adf_choosestudents.png)
+    ![](../media/03-adf_choosestudents.jpg)
 
 11. Ensure that **Copy file recursively** and **Binary Copy** are not checked off. Also ensure that **Compression Type** is "none".
 
-    ![](../media/03-adf_source_next.png)
+    ![](../media/03-adf_source_next.jpg)
 
 12. ADF should auto-detect the file format to be JSON. You can also select the file format as **JSON format.** You should also make sure you select **Array of Objects**  as the File pattern.
 
-    ![](../media/03-adf_source_dataset_format.png)
+    ![](../media/03-adf_source_dataset_format.jpg)
 
 13. You have now successfully connected the Blob Storage container with the students.json file. You should select **StudentsJson** as the source and click **Next**.
 
-    ![](../media/03-adf_SourceNext.png)
+    ![](../media/03-adf_SourceNext.jpg)
 
 14. Add the Cosmos DB target data store by selecting **Create new connection** and selecting **Azure Cosmos DB**.
 
-    ![](../media/03-adf_selecttarget.png)
+    ![](../media/03-adf_selecttarget.jpg)
 
 15. Name the linked service **targetcosmosdb** and select your Azure subscription and Cosmos DB account. You should also select the Cosmos DB database that you created earlier.
 
-    ![](../media/03-adf_selecttargetdb.png)
+    ![](../media/03-adf_selecttargetdb.jpg)
 
 16. Select your newly created **targetcosmosdb** connection as the Destination date store.
 
