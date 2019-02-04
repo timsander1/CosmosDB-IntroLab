@@ -120,8 +120,6 @@
 
     1. Click the **OK** button.
 
-    ![Add collection](../media/04-add_collection_settings.jpg)
-
 1. Wait for the creation of the new **database** and **collection** to finish before moving on with this lab.
 
 ### Retrieve Account Credentials
@@ -185,7 +183,7 @@ You will use **Azure Data Factory (ADF)** to import the JSON array stored in the
 
     ![](../media/03-adf_source_next.jpg)
 
-12. ADF should auto-detect the file format to be JSON. You can also select the file format as **JSON format.** You should also make sure you select **Array of Objects**  as the File pattern.
+12. You should select the file format as **JSON format.** You should also make sure you select **Array of Objects**  as the File pattern.
 
     ![](../media/03-adf_source_dataset_format.jpg)
 
