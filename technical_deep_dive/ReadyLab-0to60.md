@@ -203,27 +203,27 @@ You will use **Azure Data Factory (ADF)** to import the JSON array stored in the
 
 16. Select your newly created **targetcosmosdb** connection as the Destination date store.
 
-    ![](../media/03-adf_destconnectionnext.png)
+    ![](../media/03-adf_destconnectionnext.jpg)
 
 17. Select your collection from the drop-down menu. You will map your Blob storage file to the correct Cosmos DB collection.
 
-    ![](../media/03-adf_correcttable.png)
+    ![](../media/03-adf_correcttable.jpg)
 
 18. You should have selected to skip column mappings in a previous step. Click through this screen.
 
-    ![](../media/03-adf_destinationconnectionfinal.png)
+    ![](../media/03-adf_destinationconnectionfinal.jpg)
 
 19. There is no need to change any settings. Click **next**.
 
-    ![](../media/03-adf_settings.png)
+    ![](../media/03-adf_settings.jpg)
 
 20. After deployment is complete, select **Monitor**.
 
-    ![](../media/03-adf_deployment.png)
+    ![](../media/03-adf_deployment.jpg)
 
 21. After a few minutes, refresh the page and the status for the ImportStudents pipeline should be listed as **Succeeded**.
 
-    ![](../media/03-adf-succeeded.png)
+    ![](../media/03-adf-succeeded.jpg)
 
 22. Once the import process has completed, close the ADF. You will now proceed to execute simple queries on your imported data. 
 
