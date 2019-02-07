@@ -177,7 +177,7 @@ You will use **Azure Data Factory (ADF)** to import the JSON array stored in the
 
 10. Select the **StudentsJson** data store and click **Next**
 
-    ![](../media/03-adf_connecttoblob-updated-dialog.png)
+    ![](../media/03-adf_choosestudents-data-store.png)
     
     Select the **students** folder
 
