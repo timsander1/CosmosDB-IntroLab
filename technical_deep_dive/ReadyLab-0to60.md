@@ -167,15 +167,19 @@ You will use **Azure Data Factory (ADF)** to import the JSON array stored in the
 
    ![adf-properties](../media/03-adf_properties.jpg)
 
-8. **Create a new connection** and select **Azure Blob Storage**. We will import data from a json file on Azure Blob Storage. In addition to Blob Storage, you can use ADF to migrate from a wide variety of sources. We will not cover migration from these sources in this tutorial.
+8. **Create a new connection**, select **Azure Blob Storage**, and click **Continue**. We will import data from a json file on Azure Blob Storage. In addition to Blob Storage, you can use ADF to migrate from a wide variety of sources. We will not cover migration from these sources in this tutorial.
 
     ![](../media/03-adf_blob.jpg)
 
-9. Name the source **StudentsJson** and select **Use SAS URI** as the Authentication method. Please use the following SAS URI for read-only access to this Blob Storage container: https://cosmosdblabs.blob.core.windows.net/?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2020-03-11T08:08:39Z&st=2018-11-10T02:08:39Z&spr=https&sig=ZSwZhcBdwLVIMRj94pxxGojWwyHkLTAgnL43BkbWKyg%3D
+9. Name the source **StudentsJson** and select **Use SAS URI** as the Authentication method. Please paste the following SAS URI into the **SAS URL** field for read-only access to this Blob Storage container. You may leave **SAS Token** empty as it is in the URI.  Test the connection and then click **Finish**. The URI is: https://cosmosdblabs.blob.core.windows.net/?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2020-03-11T08:08:39Z&st=2018-11-10T02:08:39Z&spr=https&sig=ZSwZhcBdwLVIMRj94pxxGojWwyHkLTAgnL43BkbWKyg%3D
 
-    ![](../media/03-adf_connecttoblob.jpg)
+    ![](../media/03-adf_connecttoblob-updated-dialog.png)
 
-10. Select the **students** folder
+10. Select the **StudentsJson** data store and click **Next**
+
+    ![](../media/03-adf_connecttoblob-updated-dialog.png)
+    
+    Select the **students** folder
 
     ![](../media/03-adf_choosestudents.jpg)
 
