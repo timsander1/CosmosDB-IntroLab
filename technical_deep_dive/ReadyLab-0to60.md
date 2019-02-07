@@ -153,9 +153,9 @@ You will use **Azure Data Factory (ADF)** to import the JSON array stored in the
 
 4. Search for **Data Factory** and select it
 
-    ![adf-search](../media/03-adf_search.jpg)
+    ![adf-search](../media/03-adf_search.png)
 
-5. Create a new **Data Factory**. You should name this data factory **importstudentdata** and select the relevant Azure subscription. You should ensure your existing **cosmosdblab-group** resource group is selected as well as a Version **V2**. Select **East US** as the region. Click **create**.
+5. Create a new **Data Factory**. You should name this data factory **importstudentdata-[alias]** and select the relevant Azure subscription. You should ensure your existing **cosmosdblab-group** resource group is selected as well as a Version **V2**. Select **East US** as the region. Click **create**.
 
     ![df](../media/03-adf_selections.jpg)
 
