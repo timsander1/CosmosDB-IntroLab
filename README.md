@@ -21,4 +21,4 @@ Prior to starting these labs, you must have the following operating system and s
 URI: https://ready-students.documents.azure.com:443/
 
 
-Primary Key: dgZKMRUK96DVsykBPHQ5o3jBLg2PUxSY0DVcjzEwCcQd4Mb4pC0B0GXJJKs5STf5XL3SjrRhRPxbbDwKSu76Ug==
+
